@@ -1,16 +1,21 @@
-````markdown
-# KALI DEMO
+# KALI
 
-A simple Python project demonstrating multimedia programming with Python.
+A lightweight Python multimedia demonstration project showcasing image rendering, audio playback, threading, file manipulation, and executable packaging.
 
-## Features
+---
 
-- 🖼️ Opens multiple independent image windows using Tkinter.
-- 🔊 Plays multiple overlapping instances of an audio clip.
-- 📁 Replaces PNG files located only inside the project's own `gallery` folder.
-- 📦 Compatible with PyInstaller for building a standalone executable.
+## ✨ Features
 
-## Project Structure
+- 🖼️ Displays multiple independent image windows.
+- 🔊 Plays multiple overlapping audio instances.
+- 📁 Demonstrates controlled file manipulation within the project's own directory.
+- ⚡ Multi-threaded image and audio execution.
+- 📦 Ready for packaging with PyInstaller.
+- 🪟 Native Windows desktop application.
+
+---
+
+## 📂 Project Structure
 
 ```text
 KALI/
@@ -30,69 +35,111 @@ KALI/
     └── image4.png
 ```
 
-## Requirements
+---
 
-- Python 3.10+
-- Pillow
-- pygame
+## 🚀 Installation
 
-Install dependencies:
+Clone the repository
+
+```bash
+git clone https://github.com/Vixxel/KALI.git
+cd KALI
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Running
+Run
 
 ```bash
 python main.py
 ```
 
-## Building an Executable
+---
 
-Install PyInstaller:
+## 🛠️ Build Executable
+
+Install PyInstaller
 
 ```bash
 pip install pyinstaller
 ```
 
-Build:
+Compile
 
 ```bash
-python -m PyInstaller ^
---onefile ^
---windowed ^
+python -m PyInstaller --onefile --windowed ^
 --add-data "assets;assets" ^
 --add-data "gallery;gallery" ^
 main.py
 ```
 
-The executable will be created in:
+The executable will be generated inside:
 
 ```text
-dist/main.exe
+dist/
 ```
 
-## Included Assets
+---
 
-### assets/
+## 📦 Requirements
 
-Contains the multimedia resources used by the applicastion.
-
-- `image.png`
-- `sound.mp3`
-
-### gallery/
-
-Contains demonstration PNG files that are replaced with the bundled `image.png` when the program runs. The application only modifies files inside this folder.
-
-## Libraries Used
-
+- Python 3.10+
 - Pillow
 - pygame
 - tkinter (included with Python)
 
-## License
+---
 
-Released under the MIT License.
-````
+## 📚 Technologies Used
+
+- Python
+- Pillow
+- pygame
+- tkinter
+- PyInstaller
+- Threading
+- File Management
+
+---
+
+## 🎯 Project Goals
+
+This project was created to practice and demonstrate:
+
+- Desktop application development
+- Multimedia programming
+- Asset management
+- Multi-threading
+- File system operations
+- Executable distribution
+
+---
+
+## 📌 Notes
+
+This project is intended as an educational demonstration of multimedia programming in Python.
+
+The application operates only on resources contained within its own project directory and does not interact with arbitrary files elsewhere on the system.
+
+---
+
+## 📈 Future Improvements
+
+- Theme support
+- Configuration file
+- GIF animation support
+- Custom executable icon
+- Additional multimedia effects
+- Cross-platform improvements
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+Feel free to fork, modify, and experiment with the project.
